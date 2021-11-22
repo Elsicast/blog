@@ -1,0 +1,29 @@
+@url = http://localhost:2358/api
+@json = Content-Type: application/json
+### send request
+
+get {{url}}
+
+### 登录
+
+POST {{url}}/login
+{{json}}
+
+{
+    ""
+}
+
+### 注册
+
+POST {{url}}/register
+{{json}}
+
+{
+    "useraccount":"hentailily1",
+    "username":"user1",
+    "password":"123456"
+}
+
+###查询
+
+GET {{url}}/users HTTP/1.1

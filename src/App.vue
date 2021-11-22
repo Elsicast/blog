@@ -1,5 +1,7 @@
 <template>
-  <router-view></router-view>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style lang="scss">
@@ -13,7 +15,6 @@
 
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
